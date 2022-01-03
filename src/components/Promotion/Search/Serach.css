@@ -1,0 +1,23 @@
+.promotion-search {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+}
+
+.promotions-search__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.promotions-search__input {
+  height: 42px;
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+}
