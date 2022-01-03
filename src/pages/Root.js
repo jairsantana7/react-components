@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PagesPromotionSearch from "./Promotion/Search/Search";
 import PagesPromotionForm from "./Promotion/Form/Form";
+import PagesPromotionSearch from "./Promotion/Search/Search";
 
 const Root = () => {
   return (

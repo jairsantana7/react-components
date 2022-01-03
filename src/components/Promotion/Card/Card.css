@@ -5,6 +5,12 @@
   display: flex;
   padding: 15px;
   align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.promotion-card:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .promotion-card__image {
