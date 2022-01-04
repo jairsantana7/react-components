@@ -10,6 +10,7 @@ const Root = () => {
         <Route path="/" element={<PagesPromotionSearch />} />
         <Route path="/create" element={<PagesPromotionForm />} />
         <Route path="/edit/:id" element={<PagesPromotionForm />} />
+        <Route path="/delete/:id" element={<PagesPromotionForm />} />
       </Routes>
     </BrowserRouter>
   );
