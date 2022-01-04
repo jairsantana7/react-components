@@ -31,9 +31,23 @@
     {
       "id": 5,
       "title": "Monitor Gamer BenQ ZOWIE 24´ Widescreen, Full HD, HDMI/DVI/Display Port, 144Hz, 1ms, Altura Ajustável - XL2411P",
-      "price": "1.599,00",
+      "price": "1.599,50",
       "url": "https://www.amazon.com.br/Monitor-BenQ-Widescreen-Display-Ajust%C3%A1vel/dp/B075JGL4WV?ref=dlx_16339_sh_dcl_img_0_2f97e7cf_dt_mese8_65",
       "imageUrl": "https://m.media-amazon.com/images/I/51HqBwgAdkL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "",
+      "price": 0,
+      "url": "",
+      "imageUrl": ""
+    },
+    {
+      "id": 7,
+      "title": "",
+      "price": 0,
+      "url": "",
+      "imageUrl": ""
     }
   ],
   "comments": [
