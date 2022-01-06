@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Form.css";
 import { useEffect } from "react";
+import useApi from "../utils/useApi";
 
 const initialValue = {
   id: "",
@@ -13,25 +14,40 @@ const initialValue = {
 };
 
 const PromotionForm = ({ id }) => {
-  //console.log(id);
-  // "id": 2,
-  // "title": "Faqueiro Tramontina Laguna Inox - 100 Peças",
-  // "price": 246.05,
-  // "url": "",
-  // "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/0324bf9ad81ccbc5a8e22a1a41015649.png"
+  const [values, setValue] = useState(id ? null : initialValue);
+  const navigate = useNavigate();
+  const [load, loadInfo] = useApi({
+    url: `/promotions/${id}`,
+    method: "get",
+
+    onCompleted: response => {
+      setValue(response.data);
+    }
+
+    // onCompleted: response => {
+    //   setPromotions(response.data);
+    // }
+  });
+
+  const [save, saveInfo] = useApi({
+    url: id
+      ? `http://localhost:5000/promotions/${id}`
+      : "http://localhost:5000/promotions",
+    method: id ? "put" : "post",
+    data: values,
+    onCompleted: response => {
+      if (!response.error) {
+        navigate("/");
+      }
+    }
+  });
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/promotions/${id}`).then(response => {
-        setValue(response.data);
-
-        //console.log(response.data);
-      });
+      load();
     }
-  }, []);
-
-  const [values, setValue] = useState(id ? null : initialValue);
-  const navigate = useNavigate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   function onChance(event) {
     const { name, value } = event.target;
@@ -39,16 +55,17 @@ const PromotionForm = ({ id }) => {
     setValue({ ...values, [name]: value });
   }
 
+  function format(content) {
+    for (let i in content) {
+      content.title = content.title.toUpperCase();
+    }
+
+    return content;
+  }
+
   function onSubmit(event) {
     event.preventDefault();
-    const method = id ? "put" : "post";
-    const url = id
-      ? `http://localhost:5000/promotions/${id}`
-      : "http://localhost:5000/promotions";
-
-    axios[method](url, values).then(response => {
-      navigate("/");
-    });
+    save({ data: format(values) });
   }
 
   if (!values) {
@@ -57,10 +74,16 @@ const PromotionForm = ({ id }) => {
 
   return (
     <>
-      <h1>Promo Show</h1>
-      <h2>New Promotion</h2>
+      <header className="promotions-search__header">
+        <h1>Edit Promo</h1>
+
+        <Link to="/">Home</Link>
+      </header>
+
+      <nav></nav>
 
       <form onSubmit={onSubmit}>
+        {saveInfo.loading && <span>Salvando Dados</span>}
         <div className="promotion-form_group">
           <label htmlFor="title">Title</label>
           <input
