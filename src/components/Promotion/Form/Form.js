@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import "./Form.css";
 import { useEffect } from "react";
@@ -16,6 +15,7 @@ const initialValue = {
 const PromotionForm = ({ id }) => {
   const [values, setValue] = useState(id ? null : initialValue);
   const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   const [load, loadInfo] = useApi({
     url: `/promotions/${id}`,
     method: "get",
@@ -57,7 +57,7 @@ const PromotionForm = ({ id }) => {
 
   function format(content) {
     for (let i in content) {
-      content.title = content.title.toUpperCase();
+      content.title = content.title.toUpperCase(i);
     }
 
     return content;
