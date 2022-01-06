@@ -19,6 +19,10 @@
   padding-right: 20px;
 }
 
+.promotion-card__info {
+  flex-grow: 1;
+}
+
 .promotion-card__title {
   font-size: 16px;
   color: rgba(78, 75, 75, 0.8);
@@ -31,9 +35,13 @@
 }
 
 .promotion-card__comment {
-  font-size: 16px;
+  font-size: 14px;
   color: #95a5a6;
   font-weight: bold;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .promotion-card__comments-count {
@@ -49,6 +57,8 @@
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(52, 129, 245);
+  margin-left: 10px;
+  white-space: nowrap;
 }
 
 .promotion-card__footer {
