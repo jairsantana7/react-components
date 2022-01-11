@@ -34,38 +34,39 @@
       "price": "50,00",
       "url": "https://www.amazon.com.br/Monitor-BenQ-Widescreen-Display-Ajust%C3%A1vel/dp/B075JGL4WV?ref=dlx_16339_sh_dcl_img_0_2f97e7cf_dt_mese8_65",
       "imageUrl": "https://m.media-amazon.com/images/I/51HqBwgAdkL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "jair jair",
+      "price": "50",
+      "url": "",
+      "imageUrl": ""
+    },
+    {
+      "id": 7,
+      "title": "",
+      "price": "4545",
+      "url": "",
+      "imageUrl": ""
+    },
+    {
+      "id": 8,
+      "title": "BFBFBFB",
+      "price": 0,
+      "url": "",
+      "imageUrl": ""
     }
   ],
   "comments": [
     {
       "id": 1,
       "comment": "TELA HD",
-      "promotionId": 1,
-      "userId": 2
+      "promotionId": 1
     },
     {
       "id": 2,
       "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
-      "promotionId": 2,
-      "userId": 1
-    },
-    {
-      "id": 3,
-      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
-      "promotionId": 2,
-      "userId": 2
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Jair",
-      "avatarUrl": "https://randomuser.me/api/portraits/men/32.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Helena",
-      "avatarUrl": "https://api.uifaces.co/our-content/donated/3799Ffxy.jpeg"
+      "promotionId": 2
     }
   ]
 }
