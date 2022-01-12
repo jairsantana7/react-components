@@ -14,6 +14,7 @@ export default function useApi(config) {
 
   async function call(localConfig) {
     setRequestInfo({
+      ...localConfig,
       ...initialRequestInfo,
       loading: true
     });
@@ -22,15 +23,9 @@ export default function useApi(config) {
 
     const finalConfig = {
       baseURL: "http://localhost:5000",
-      ...config,
-      ...localConfig
+      delay: 500,
+      ...config
     };
-
-    if (!finalConfig.quietly) {
-      setRequestInfo({
-        loading: true
-      });
-    }
 
     const fn = finalConfig.debounced ? deabouncedAxios : axios;
 

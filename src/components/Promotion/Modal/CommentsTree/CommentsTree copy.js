@@ -3,12 +3,11 @@ import "./CommentsTree.css";
 import { useState, useMemo } from "react";
 
 function getTree(list) {
-  if (!list) {
-    return [];
-  }
   const roots = [];
   const childrenByParentId = {};
-
+  if (!list) {
+    return;
+  }
   list.forEach(item => {
     if (!item.parentId) {
       roots.push(item);
@@ -25,7 +24,7 @@ function getTree(list) {
       return null;
     }
     return nodes.map(node => ({
-      ...node,
+      ...nodes,
       children: buildNodes(childrenByParentId[node.id])
     }));
   }
@@ -33,11 +32,37 @@ function getTree(list) {
   return buildNodes(roots);
 }
 
+const roots1 = [
+  {
+    id: 3,
+    comment: "ghhghg",
+    promotionId: 2,
+    userId: 2
+  },
+  {
+    userId: 1,
+    promotionId: 2,
+    comment: "okokok",
+    parentId: 3,
+    id: 4,
+    children: [
+      {
+        userId: 1,
+        promotionId: 2,
+        comment: "kooo",
+        parentId: 3,
+        id: 5
+      }
+    ]
+  }
+];
+
 const CommentsTree = ({ comments, sendComment }) => {
   //getTree(roots1);
   //console.log(getTree(comments));
 
   const tree = useMemo(() => getTree(comments), [comments]);
+  console.log(tree);
   const [activeCommentBox, setActiveCommentBox] = useState(null);
   const [comment, setComment] = useState("");
 
@@ -45,9 +70,17 @@ const CommentsTree = ({ comments, sendComment }) => {
     return <div>Carregando...</div>;
   }
 
-  function renderItem(item, key) {
+  function renderList(list) {
     return (
-      <li key={key} className="promotion-modal-comments-tree__item">
+      <ul className="promotion-modal-comments-tree">
+        {tree.map(item => renderItem(item))}
+      </ul>
+    );
+  }
+
+  function renderItem(item) {
+    return (
+      <li className="promotion-modal-comments-tree__item">
         <img
           className="promotion-modal-comments-tree__item__avatar"
           src={item.user.avatarUrl}
@@ -94,14 +127,6 @@ const CommentsTree = ({ comments, sendComment }) => {
           {item.children && renderList(item.children)}
         </div>
       </li>
-    );
-  }
-
-  function renderList(list) {
-    return (
-      <ul className="promotion-modal-comments-tree">
-        {list.map((item, key) => renderItem(item, key))}
-      </ul>
     );
   }
 
