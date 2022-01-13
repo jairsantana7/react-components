@@ -5,20 +5,25 @@ import PromotionList from "../List/List";
 import "./Serach.css";
 import useApi from "../utils/useApi";
 import { useRef } from "react";
+import UIInfiniteScroll from "components/UI/InfiniteScroll.js/InfiniteScroll";
+
+const baseParams = {
+  _embed: "comments",
+  _order: "desc",
+  _sort: "id",
+
+  _limit: 4,
+  _page: 1
+};
 
 const PromotionSearch = () => {
+  const [page, setPage] = useState(1);
   const mountRef = useRef(null);
   const [search, setSearch] = useState("");
   const [load, loadInfo] = useApi({
     debounceDelay: 500,
     url: "/promotions",
-    method: "get",
-    params: {
-      _embed: "comments",
-      _order: "desc",
-      _sort: "id",
-      title_like: search || undefined
-    }
+    method: "get"
 
     // onCompleted: response => {
     //   setPromotions(response.data);
@@ -26,13 +31,37 @@ const PromotionSearch = () => {
   });
 
   useEffect(() => {
-    load({ debounced: mountRef.current });
+    load({
+      debounced: mountRef.current,
+      params: {
+        ...baseParams,
+        _page: 1,
+        title_like: search || undefined
+      }
+    });
 
     if (!mountRef.current) {
       mountRef.current = true;
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
+
+  function fetchMore() {
+    const newPage = page + 1;
+    load({
+      isfetchMore: true,
+      params: {
+        ...baseParams,
+        _page: newPage,
+        title_like: search || undefined
+      },
+      updateRequestInfo: (newRequestInfo, prevRequestInfo) => ({
+        ...newRequestInfo,
+        data: [...prevRequestInfo.data, ...newRequestInfo.data]
+      })
+    });
+    setPage(newPage);
+  }
 
   return (
     <div className="promotion-search">
@@ -59,6 +88,11 @@ const PromotionSearch = () => {
         loading={loadInfo.loading}
         error={loadInfo.error}
       />
+      {loadInfo.data &&
+        !loadInfo.loading &&
+        loadInfo.data?.length < loadInfo.total && (
+          <UIInfiniteScroll fetchMore={fetchMore} />
+        )}
     </div>
   );
 };
