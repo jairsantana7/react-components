@@ -26,7 +26,7 @@
       "title": "FONE DE OUVIDO JAYBIRD RUN XT SPORT BLUETOOTH, CINZAOKOKOKO",
       "price": 699.9,
       "url": "",
-      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem_url/9c4b176eb52bb4877e853cf36393d8fc.jpg"
+      "imageUrl": "https://images-submarino.b2w.io/produtos/01/00/img/2750576/0/2750576092_1GG.jpg"
     },
     {
       "id": 5,
@@ -37,10 +37,31 @@
     },
     {
       "id": 6,
-      "title": "",
-      "price": 0,
-      "url": "",
-      "imageUrl": ""
+      "title": "CANGACEIRO JAVASCRIPT: UMA AVENTURA NO SERTÃO DA PROGRAMAÇÃO",
+      "price": "50,00",
+      "url": "https://www.scribd.com/doc/405663536/Cangaceiro-JavaScript-Uma-aventura-no-sertao-da-programacao",
+      "imageUrl": "https://imgv2-2-f.scribdassets.com/img/word_document/405663536/original/216x287/ad49e6e3be/1638120479?v=1"
+    },
+    {
+      "id": 7,
+      "title": "15 - REACTJS PARA INICIANTES - INTEGRANDO FORMULÁRIO DE CADASTRO COM FORMIK",
+      "price": "900",
+      "url": "https://www.youtube.com/watch?v=EM4eRpwaLOk&list=PLv2oOZboUtKMMszyFDrMz-cVs4pKqDssM&index=15",
+      "imageUrl": "https://yt3.ggpht.com/nUzSa4G8hiHBXKHoMUTQXpYcwnGu4kT1dNBiyaN7S_d1SbF8J_Jip8r_YKTd3-bSOhlx8IGW=s48-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": 8,
+      "title": "ok",
+      "price": "50",
+      "url": "https://www.amazon.com.br/Monitor-BenQ-Widescreen-Display-Ajust%C3%A1vel/dp/B075JGL4WV?ref=dlx_16339_sh_dcl_img_0_2f97e7cf_dt_mese8_65",
+      "imageUrl": "https://m.media-amazon.com/images/I/51HqBwgAdkL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Agora foi!",
+      "price": "500",
+      "url": "https://www.scribd.com/doc/405663536/Cangaceiro-JavaScript-Uma-aventura-no-sertao-da-programacao",
+      "imageUrl": "https://imgv2-2-f.scribdassets.com/img/word_document/405663536/original/216x287/ad49e6e3be/1638120479?v=1"
     }
   ],
   "comments": [
@@ -287,6 +308,40 @@
       "comment": "kkkkkkk",
       "parentId": 35,
       "id": 37
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "body {\n    margin: 0;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    box-sizing: border-box;\n}",
+      "id": 38
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "#15 - ReactJS para Iniciantes - Integrando formulário de cadastro com Formik\nNo vídeo de hoje, nós aprendemos como integrar o nosso formulário de cadastro com o Formik, uma das libs mais utilizadas para gerenciar formulários em ReactJS. Além de fazer a integração, ",
+      "parentId": 38,
+      "id": 39
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "1",
+      "parentId": 1,
+      "id": 40
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "2",
+      "parentId": 40,
+      "id": 41
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "2\n",
+      "parentId": 40,
+      "id": 42
     }
   ],
   "users": [

@@ -1,0 +1,54 @@
+.promotion-form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fiel_label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-fiel_input {
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  height: 36px;
+  padding: 0 10px;
+}
+
+.form-fiel_input--has-error {
+  border: 1px solid red;
+}
+
+.promotion-form_group span {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(214, 12, 12);
+}
+
+.promotion-form_group button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(52, 129, 245);
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(52, 129, 245);
+  margin-left: 10px;
+  white-space: nowrap;
+  transition: all, 0.3s;
+  background: transparent;
+}
+
+.promotion-form_group button:hover {
+  color: #fff;
+  background: rgb(52, 129, 245);
+  cursor: pointer;
+}
