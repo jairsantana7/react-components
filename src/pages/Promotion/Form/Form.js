@@ -11,8 +11,6 @@ const PagesPromotionForm = () => {
       <UIContainer>
         <PromotionForm id={id ? Number.parseInt(id, 10) : null} />
       </UIContainer>
-
-      {id && <div>id: {id}</div>}
     </>
   );
 };

@@ -5,6 +5,7 @@ import useApi from "../utils/useApi";
 import { Formik, Form } from "formik";
 import schema from "./schema";
 import FormField from "components/Form/Field/Field";
+import UIButon from "components/UI/Button/Button";
 
 const initialValue = {
   id: "",
@@ -51,7 +52,9 @@ const PromotionForm = ({ id }) => {
       <header className="promotions-search__header">
         <h1>Edit Promo</h1>
 
-        <Link to="/">Home</Link>
+        <UIButon to="/" component={Link}>
+          Home
+        </UIButon>
       </header>
 
       {!values ? (
@@ -94,9 +97,14 @@ const PromotionForm = ({ id }) => {
                   {errors.imageUrl ? <span>{errors.imageUrl}</span> : null}
                 </div>
 
-                <div className="promotion-form_group">
-                  <button type="submit">Salvar</button>
-                </div>
+                <UIButon
+                  className={"send"}
+                  theme={"contained-green"}
+                  component="button"
+                  type="submit"
+                >
+                  Salvar
+                </UIButon>
               </Form>
             );
           }}
