@@ -6,6 +6,7 @@ import "./Serach.css";
 import useApi from "../utils/useApi";
 import { useRef } from "react";
 import UIInfiniteScroll from "components/UI/InfiniteScroll.js/InfiniteScroll";
+import UIButon from "components/UI/Button/Button";
 
 const baseParams = {
   _embed: "comments",
@@ -67,7 +68,10 @@ const PromotionSearch = () => {
     <div className="promotion-search">
       <header className="promotions-search__header">
         <h1>Promo Show</h1>
-        <Link to="/create">New Promotion</Link>
+        <UIButon theme={"contained-green"} component={Link} to="/create">
+          New Promotion
+        </UIButon>
+        {/*  <Link to="/create">New Promotion</Link> */}
       </header>
 
       <label htmlFor="title">Título</label>

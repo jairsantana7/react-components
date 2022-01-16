@@ -1,0 +1,34 @@
+.ui-button {
+  background: transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all, 0.3s;
+}
+
+.ui-button:hover {
+  color: #fff;
+  background: rgb(52, 129, 245);
+}
+
+button.promotion-card__comments-count:hover {
+  color: rgb(44, 44, 44);
+}
+
+.ui-button--bordered-blue {
+  color: rgb(52, 129, 245);
+  border: 1px solid currentColor;
+}
+
+.ui-button--contained-green {
+  color: #fff;
+  border: 1px solid currentColor;
+  background: rgba(0, 245, 102, 0.842);
+}
+
+.ui-button--contained-green:hover {
+}

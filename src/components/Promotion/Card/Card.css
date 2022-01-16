@@ -53,28 +53,6 @@
   transition: all, 0.3s;
   cursor: pointer;
 }
-button.promotion-card__comments-count:hover {
-  color: rgb(44, 44, 44);
-}
-
-.promotion-card__link {
-  border: 1px solid rgb(52, 129, 245);
-  border-radius: 4px;
-  text-decoration: none;
-  padding: 8px 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgb(52, 129, 245);
-  margin-left: 10px;
-  white-space: nowrap;
-  transition: all, 0.3s;
-}
-
-.promotion-card__link:hover {
-  color: #fff;
-  background: rgb(52, 129, 245);
-  cursor: pointer;
-}
 
 .promotion-card__footer {
   justify-content: flex-end;
