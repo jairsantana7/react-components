@@ -1,0 +1,7 @@
+form {
+  position: relative;
+}
+.promotion-form_group {
+  display: flex;
+  flex-direction: column;
+}

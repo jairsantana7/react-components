@@ -2,39 +2,358 @@
   "promotions": [
     {
       "id": 1,
-      "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
+      "title": "KIT NOTEBOOK ACER ASPIRE 3 + MOCHILA GREEN, A315-41-R790, AMD RYZEN 3 2200U DUAL CORE JAIR",
       "price": 1799,
+      "url": "",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem_url/2631517face1861bc4f46ae154d387de.png"
     },
     {
       "id": 2,
-      "title": "Faqueiro Tramontina Laguna Inox - 100 Peças",
+      "title": "FAQUEIRO TRAMONTINA LAGUNA INOX - 100 PEÇAS  ",
       "price": 246.05,
+      "url": "",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/0324bf9ad81ccbc5a8e22a1a41015649.png"
     },
     {
       "id": 3,
-      "title": "Tênis West Coast Marrom",
-      "price": 119.99,
+      "title": "TÊNIS WEST COAST MARROM",
+      "price": "119",
+      "url": "",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/fe0a1e4ddcbd8f9a99a05908b6d29ea2.png"
     },
     {
       "id": 4,
-      "title": "Fone de Ouvido Jaybird Run XT Sport Bluetooth, Cinza",
-      "price": 699.90,
-      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem_url/9c4b176eb52bb4877e853cf36393d8fc.jpg"
+      "title": "FONE DE OUVIDO JAYBIRD RUN XT SPORT BLUETOOTH, CINZAOKOKOKO",
+      "price": 699.9,
+      "url": "",
+      "imageUrl": "https://images-submarino.b2w.io/produtos/01/00/img/2750576/0/2750576092_1GG.jpg"
+    },
+    {
+      "id": 5,
+      "title": "MONITOR GAMER BENQ ZOWIE 24",
+      "price": "50,00",
+      "url": "https://www.amazon.com.br/Monitor-BenQ-Widescreen-Display-Ajust%C3%A1vel/dp/B075JGL4WV?ref=dlx_16339_sh_dcl_img_0_2f97e7cf_dt_mese8_65",
+      "imageUrl": "https://m.media-amazon.com/images/I/51HqBwgAdkL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "CANGACEIRO JAVASCRIPT: UMA AVENTURA NO SERTÃO DA PROGRAMAÇÃO",
+      "price": "50,00",
+      "url": "https://www.scribd.com/doc/405663536/Cangaceiro-JavaScript-Uma-aventura-no-sertao-da-programacao",
+      "imageUrl": "https://imgv2-2-f.scribdassets.com/img/word_document/405663536/original/216x287/ad49e6e3be/1638120479?v=1"
+    },
+    {
+      "id": 7,
+      "title": "15 - REACTJS PARA INICIANTES - INTEGRANDO FORMULÁRIO DE CADASTRO COM FORMIK",
+      "price": "900",
+      "url": "https://www.youtube.com/watch?v=EM4eRpwaLOk&list=PLv2oOZboUtKMMszyFDrMz-cVs4pKqDssM&index=15",
+      "imageUrl": "https://yt3.ggpht.com/nUzSa4G8hiHBXKHoMUTQXpYcwnGu4kT1dNBiyaN7S_d1SbF8J_Jip8r_YKTd3-bSOhlx8IGW=s48-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": 8,
+      "title": "ok",
+      "price": "50",
+      "url": "https://www.amazon.com.br/Monitor-BenQ-Widescreen-Display-Ajust%C3%A1vel/dp/B075JGL4WV?ref=dlx_16339_sh_dcl_img_0_2f97e7cf_dt_mese8_65",
+      "imageUrl": "https://m.media-amazon.com/images/I/51HqBwgAdkL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Agora foi!",
+      "price": "500",
+      "url": "https://www.scribd.com/doc/405663536/Cangaceiro-JavaScript-Uma-aventura-no-sertao-da-programacao",
+      "imageUrl": "https://imgv2-2-f.scribdassets.com/img/word_document/405663536/original/216x287/ad49e6e3be/1638120479?v=1"
     }
   ],
   "comments": [
     {
       "id": 1,
       "comment": "TELA HD",
-      "promotionId": 1
+      "promotionId": 1,
+      "userId": 2
     },
     {
       "id": 2,
       "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
-      "promotionId": 2
+      "promotionId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
+      "promotionId": 2,
+      "userId": 2
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "okokok",
+      "parentId": 3,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "kooo",
+      "parentId": 3,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "parentId": 3,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "ok",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "dsdsd",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "dsdsdsd",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "fdfdffdf",
+      "parentId": 8,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "dsdsd",
+      "parentId": 3,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "",
+      "parentId": 8,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "aaaa",
+      "parentId": 8,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "",
+      "parentId": 8,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "zasaaaaaaa",
+      "parentId": 8,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "agora foi",
+      "parentId": 5,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "oko",
+      "parentId": 16,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "oi",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "sasa",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "sasas",
+      "parentId": 10,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "dsds",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "promotionId": 5,
+      "comment": "dsds",
+      "parentId": 20,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "dsds",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "dsds",
+      "parentId": 23,
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "dsds",
+      "parentId": 24,
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "dsdsd",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "dsdsd",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "xzxz",
+      "parentId": 23,
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "parentId": 30,
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "parentId": 31,
+      "id": 32
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "parentId": 32,
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "parentId": 33,
+      "id": 34
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "parentId": 31,
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "rere",
+      "id": 36
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "kkkkkkk",
+      "parentId": 35,
+      "id": 37
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "body {\n    margin: 0;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    box-sizing: border-box;\n}",
+      "id": 38
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "#15 - ReactJS para Iniciantes - Integrando formulário de cadastro com Formik\nNo vídeo de hoje, nós aprendemos como integrar o nosso formulário de cadastro com o Formik, uma das libs mais utilizadas para gerenciar formulários em ReactJS. Além de fazer a integração, ",
+      "parentId": 38,
+      "id": 39
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "1",
+      "parentId": 1,
+      "id": 40
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "2",
+      "parentId": 40,
+      "id": 41
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "2\n",
+      "parentId": 40,
+      "id": 42
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jair",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Helena",
+      "avatarUrl": "https://api.uifaces.co/our-content/donated/3799Ffxy.jpeg"
     }
   ]
 }

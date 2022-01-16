@@ -1,0 +1,49 @@
+.promotion-modal-comments-tree {
+  list-style: none;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.promotion-modal-comments-tree__item {
+  display: flex;
+  padding: 20px;
+}
+.promotion-modal-comments-tree__item__avatar {
+  width: 49px;
+  height: 49px;
+  margin-right: 15px;
+  border-radius: 49px;
+}
+
+.promotion-modal-comments-tree__item__info p {
+  margin: 0px;
+}
+
+.promotion-modal-comments-tree__item__name {
+  font-weight: 600;
+}
+
+.promotion-modal-comments-tree__answer-button {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin-top: 5px;
+  color: #3498db;
+  padding: 0;
+}
+
+.promotion-modal-comments-tree__comment-box {
+  display: flex;
+  align-items: flex-end;
+}
+.promotion-modal-comments-tree__comment-box textarea {
+  border-radius: 8px;
+}
+
+.promotion-modal-comments-tree__send-button {
+  background-color: transparent;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 20px;
+}

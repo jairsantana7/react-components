@@ -19,6 +19,10 @@
   padding-right: 20px;
 }
 
+.promotion-card__info {
+  flex-grow: 1;
+}
+
 .promotion-card__title {
   font-size: 16px;
   color: rgba(78, 75, 75, 0.8);
@@ -31,14 +35,26 @@
 }
 
 .promotion-card__comment {
-  font-size: 16px;
+  font-size: 14px;
   color: #95a5a6;
   font-weight: bold;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .promotion-card__comments-count {
   margin-left: auto;
   margin-right: 10px;
+  background: transparent;
+  border: none;
+  color: rgb(52, 129, 245);
+  transition: all, 0.3s;
+  cursor: pointer;
+}
+button.promotion-card__comments-count:hover {
+  color: rgb(44, 44, 44);
 }
 
 .promotion-card__link {
@@ -49,9 +65,19 @@
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(52, 129, 245);
+  margin-left: 10px;
+  white-space: nowrap;
+  transition: all, 0.3s;
+}
+
+.promotion-card__link:hover {
+  color: #fff;
+  background: rgb(52, 129, 245);
+  cursor: pointer;
 }
 
 .promotion-card__footer {
+  justify-content: flex-end;
   display: flex;
   align-items: center;
 }
